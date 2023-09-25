@@ -8,12 +8,13 @@ class Sidemenu extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Drawer(
+      backgroundColor: Colors.green,
       child: ListView(
         children: [
-          const DrawerHeader(child: Text('Hello Slytherin'),),
+          const DrawerHeader(child: Text('Hello Slytherin', style: TextStyle(color: Colors.white)),),
           ListTile(
             leading: const Icon(Icons.home),
-            title: const Text('Home'),
+            title: const Text('Home',style: TextStyle(color: Colors.white)),
             onTap: (){
               Navigator.push(
                 context,
@@ -24,7 +25,7 @@ class Sidemenu extends StatelessWidget{
           ),
           ListTile(
             leading: const Icon(Icons.info),
-            title: const Text('Tugas'),
+            title: const Text('Tugas',style: TextStyle(color: Colors.white)),
             onTap: (){
               Navigator.push(
                 context,
